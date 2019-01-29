@@ -46,8 +46,6 @@ console.log('-----------------------------------');
 
 function mySort(arrayS){
   var result = [];
-  var i;
-  var j;
   for (var i = 0; i < arrayS.length; i++) {
     if (i === 0) {
       result.push(arrayS[i]);
@@ -67,3 +65,22 @@ function mySort(arrayS){
 }
 var arrayNumbers = [1,2,5,1231,444,456,444,555,123123]; 
 console.log(mySort(arrayNumbers)); // Sorted Array
+
+//FizzBazz
+// if number share without remainder to 15 , console (FizzBazz), 
+// if number share without remainder to 5 , console (Bazz),
+// and if number share without remainder to 3 , console (Fizz).
+function FizzBazz(num) {
+  for (var i = 1; i <= num ;i++){
+    if (i % 15 == 0){
+      console.log('FizzBazz');
+    }else if (i % 5 == 0){
+      console.log('Bazz');
+    }else if (i % 3 == 0){
+      console.log('Fizz');
+    }else{
+      console.log(i);
+    }
+  }
+}
+// FizzBazz(100); 
